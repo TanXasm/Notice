@@ -114,7 +114,7 @@ public class NoteActivity extends AppCompatActivity {
                         PopupMenu popupMenu = new PopupMenu(v.getContext(), v);
                         popupMenu.setGravity(Gravity.END);
                         //them option Edit
-                        popupMenu.getMenu().add("Edit").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+                        popupMenu.getMenu().add("Sửa").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
                             @Override
                             public boolean onMenuItemClick(MenuItem item) {
                                 Intent intent = new Intent(v.getContext(), EditNoteActivity.class);
@@ -127,7 +127,7 @@ public class NoteActivity extends AppCompatActivity {
                         });
 
                         //them option Delete
-                        popupMenu.getMenu().add("Delete").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+                        popupMenu.getMenu().add("Xóa").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
                             @Override
                             public boolean onMenuItemClick(MenuItem item) {
                                 DocumentReference documentReference = firebaseFirestore.collection("notes")
@@ -170,6 +170,16 @@ public class NoteActivity extends AppCompatActivity {
         colorCode.add(R.color.color6);
         colorCode.add(R.color.color7);
         colorCode.add(R.color.color8);
+        colorCode.add(R.color.color9);
+        colorCode.add(R.color.color10);
+        colorCode.add(R.color.color11);
+        colorCode.add(R.color.color12);
+        colorCode.add(R.color.color13);
+        colorCode.add(R.color.color14);
+        colorCode.add(R.color.color15);
+        colorCode.add(R.color.color16);
+        colorCode.add(R.color.color17);
+        colorCode.add(R.color.color18);
 
         Random random = new Random();
         int number = random.nextInt(colorCode.size());
